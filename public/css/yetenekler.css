@@ -21,7 +21,7 @@
     -moz-animation: backInUp 1000ms;
 }
 
-.card.toggle .skills {
+.card.toggle .front {
     transform: rotateY(-180deg);
 }
 
