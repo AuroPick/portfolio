@@ -40,7 +40,7 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: rotateY 500ms;
+    transition: all 500ms;
 }
 
 .back {
