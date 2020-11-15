@@ -1,3 +1,9 @@
+@media (hover: hover) and (pointer: fine) {
+    .card:hover .skills {
+        transform: rotateY(-180deg);
+    }
+}
+
 .main-wrapper {
     justify-content: space-around;
     align-items: initial;
@@ -13,7 +19,7 @@
     -moz-animation: backInUp 1000ms;
 }
 
-.card:hover .skills {
+.card.toggle .skills {
     transform: rotateY(-180deg);
 }
 
