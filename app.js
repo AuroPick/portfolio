@@ -9,7 +9,9 @@ const port = process.env.PORT || 5000;
 
 app.use('/static', express.static(path.join(__dirname, 'public')))
 app.use(expressLayouts);
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({
+    extended: false
+}))
 app.use(bodyParser.json());
 
 app.set("layout", "./layouts/default-layout");
@@ -70,18 +72,18 @@ app.post('/send', async (req, res) => {
         port: 465,
         secure: true,
         auth: {
-          user: process.env.USER,
-          pass: process.env.PASS,
+            user: process.env.USER,
+            pass: process.env.PASS,
         },
-      });
-    
+    });
+
     let mailOptions = {
         from: '"Nodemailer" <aykutsakigarbage@gmail.com>',
         to: "aykutsakibusiness@gmail.com",
         subject: "Portfoli Mesaj",
         html: output
     }
-    
+
     await transporter.sendMail(mailOptions, (err, info) => {
         if (err) {
             res.render("iletisim", {
@@ -109,9 +111,9 @@ app.post('/send', async (req, res) => {
                 </style>    
             `
         });
-        
+
         console.log("Message sent: %s", info.messageId);
-        
+
         console.log("Preview URL: %s", nodeMailer.getTestMessageUrl(info));
     });
 })

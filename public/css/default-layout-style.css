@@ -6,14 +6,14 @@
         transform: scaleX(1);
         transform-origin: left;
     }
-    
+
     .footer-svg:hover {
         animation: pulse 400ms;
         -webkit-animation: pulse 400ms;
         -moz-animation: pulse 400ms;
         -o-animation: pulse 400ms;
     }
-  }
+}
 
 html {
     overflow-y: scroll;
@@ -232,7 +232,7 @@ a {
 }
 
 @media (max-width: 768px) {
-    .nav-container{
+    .nav-container {
         justify-content: center;
         align-items: center;
         width: 100vw;
@@ -250,7 +250,7 @@ a {
         width: 100vw;
         display: none;
         background-color: #080B0C;
-        z-index: 2 ;
+        z-index: 2;
         position: fixed;
         top: 0;
         left: 0;

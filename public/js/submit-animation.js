@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function () {
     $(".form").on("submit", () => {
         $(".sk-chase").css("display", "block");
         $("#submit").val("");
@@ -7,4 +7,4 @@ $(document).ready(function(){
             $("#submit").val("Gönder");
         }, 3000);
     });
-  });
+});

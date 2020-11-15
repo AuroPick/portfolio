@@ -23,7 +23,8 @@
     transform: rotateY(-180deg);
 }
 
-.front, .back {
+.front,
+.back {
     display: flex;
     justify-content: center;
     align-items: center;
