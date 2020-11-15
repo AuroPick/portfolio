@@ -29,6 +29,10 @@
     transform: rotateY(-180deg);
 }
 
+.card.toggle .skills-text {
+    display: none;
+}
+
 .front,
 .back {
     display: flex;
