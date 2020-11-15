@@ -19,7 +19,7 @@
     -moz-animation: backInUp 1000ms;
 }
 
-.card:focus .skills {
+.card:active .skills {
     transform: rotateY(-180deg);
 }
 
