@@ -372,6 +372,10 @@ label[for="konu"] {
         width: 45rem;
         height: 20rem;
     }
+
+    .form-text {
+        font-size: 1.4rem;
+    }
 }
 
 @media (max-width: 1366px) {
@@ -480,6 +484,10 @@ label[for="konu"] {
     .map {
         width: 35rem;
         height: 15rem;
+    }
+
+    .form-text {
+        font-size: 1.2rem;
     }
 }
 
