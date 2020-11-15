@@ -21,12 +21,8 @@
     -moz-animation: backInUp 1000ms;
 }
 
-.card.toggle .front {
+.card.toggle .skills {
     transform: rotateY(-180deg);
-}
-
-.card.toggle .back {
-    transform: rotateY(0);
 }
 
 .front,
@@ -40,7 +36,6 @@
     -webkit-backface-visibility: hidden;
     -moz-backface-visibility: hidden;
     backface-visibility: hidden;
-    transition: all 500ms;
 }
 
 .back {
