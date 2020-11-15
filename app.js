@@ -1,7 +1,6 @@
 const express = require("express");
 const expressLayouts = require("express-ejs-layouts");
 const path = require("path");
-const parser = require("body-parser");
 const nodeMailer = require("nodemailer");
 const bodyParser = require("body-parser");
 
