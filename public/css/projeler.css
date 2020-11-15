@@ -1,0 +1,174 @@
+@media (hover: hover) and (pointer: fine) {
+    .card:hover {
+        transform: scale(1.05);
+    }
+}
+
+.main-wrapper {
+    justify-content: space-around;
+    align-items: initial;
+    flex-direction: column;
+}
+
+.card {
+    animation: backInUp 1000ms;
+    -webkit-animation: backInUp 1000ms;
+    -moz-animation: backInUp 1000ms;
+    -o-animation: backInUp 1000ms;
+    transition: transform 400ms;
+}
+
+.front {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.header {
+    align-self: center;
+    margin-top: 3rem;
+}
+
+.header-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
+    color: #EAE7EA;
+}
+
+.projects-container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 10rem;
+}
+
+.project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 24.1rem;
+    height: 40.3rem;
+    background-color: #232323;
+    border-radius: 10px;
+    position: relative;
+}
+
+.project-text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #EAE7EA;
+    position: absolute;
+    top: 75%;
+}
+
+@media (max-width: 1700px) {
+    .header-text {
+        font-size: 4rem;
+        line-height: 4.66rem;
+    }
+}
+
+@media (max-width: 1600px) {
+    .header-text {
+        font-size: 3.6rem;
+        line-height: 4.66rem;
+    }
+
+    .project {
+        width: 20rem;
+        height: 33.4rem;
+    }
+
+    .project-logo {
+        width: 8rem;
+    }
+
+    .project-text {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+}
+
+@media (max-width: 1367px) {
+    .header-text {
+        font-size: 3rem;
+        line-height: 3.88rem;
+    }
+
+    .project {
+        width: 16.68rem;
+        height: 27.85rem;
+    }
+
+    .project-logo {
+        width: 6.67rem;
+    }
+
+    .project-text {
+        font-size: 1.66rem;
+        line-height: 1.91rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .main {
+        height: auto;
+    }
+
+    .nav-container {
+        height: auto;
+    }
+
+    .main-container {
+        height: auto;
+    }
+
+    .footer-container {
+        height: auto;
+        margin-bottom: 5rem;
+    }
+
+    .header {
+        margin-top: 6rem;
+        margin-bottom: 5rem;
+    }
+
+    .projects-container {
+        margin-bottom: 13rem;
+    }
+}
+
+@media (max-width: 833px) {
+    .card {
+        margin-bottom: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        margin-top: 10rem;
+    }
+}
+
+@media (max-width: 416px) {
+    .card:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) and (min-height: 1024px) {
+    .projects-container {
+        margin-bottom: 0;
+    }
+}

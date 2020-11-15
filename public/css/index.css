@@ -1,0 +1,184 @@
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.left-side {
+    animation: fadeInLeft 1000ms;
+    -webkit-animation: fadeInLeft 1000ms;
+    -moz-animation: fadeInLeft 1000ms;
+    -o-animation: fadeInLeft 1000ms;
+}
+
+.right-side-wrapper {
+    position: relative;
+}
+
+svg {
+    width: 100%;
+    position: absolute;
+    z-index: -2;
+}
+
+.me {
+    z-index: -1;
+    position: relative;
+}
+
+.text {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 9.6rem;
+    line-height: 11.2rem;
+}
+
+.i {
+    color: #A1A1A1;
+}
+
+.name {
+    color: #EAE7EA;
+}
+
+.typed {
+    color: #DBC928;
+}
+
+.typed::after {
+    content: '|';
+    display: inline;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    -o-animation: blink 0.7 infinite;
+    animation: blink 0.7s infinite;
+}
+
+.typed-cursor {
+    opacity: 0;
+    display: none;
+}
+
+@media (max-width: 1700px) {
+    .text {
+        font-size: 7rem;
+        line-height: 8.1rem;
+    }
+
+    .me {
+        width: 32rem;
+    }
+}
+
+@media (max-width: 1550px) {
+    .text {
+        font-size: 6.7rem;
+        line-height: 7.8rem;
+    }
+
+    .me {
+        width: 30rem;
+    }
+}
+
+@media (max-width: 1300px) {
+    .text {
+        font-size: 5.5rem;
+        line-height: 6.4rem;
+    }
+
+    .me {
+        width: 25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .main-wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .left-side  {
+        text-align: center;
+    }
+
+    .text {
+        font-size: 4.2rem;
+        line-height: 4.8rem;
+    }
+
+    .me {
+        width: 20rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .main-wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .left-side  {
+        text-align: center;
+    }
+
+    .text {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .me {
+        width: 20rem;
+    }
+}

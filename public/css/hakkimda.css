@@ -1,0 +1,146 @@
+.left-side {
+    animation: fadeInLeft 1000ms;
+}
+
+.right-side {
+    animation: fadeInRight 1000ms;
+}
+
+.left-side .text {
+    margin-top: 2.7rem;
+}
+
+.left-side .text:first-child {
+    margin-top: 0;
+}
+
+.text {
+    font-family: Roboto;
+    font-style: normal;
+}
+
+.name {
+    font-weight: 900;
+    font-size: 9.6rem;
+    line-height: 11.2rem;
+    color: #D3C49F;
+}
+
+.sub-text {
+    font-weight: 500;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: #BBBBBB;
+}
+
+.header {
+    font-weight: 900;
+    font-size: 6.4rem;
+    line-height: 7.5rem;
+    color: #D3C49F;
+    margin-bottom: 4.1rem;
+}
+
+.left-side .sub-text:nth-child(2) {
+    width: 35vw;
+}
+
+.hobbies-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 28vw;
+}
+
+.hobbies-left-side .text, .hobbies-right-side .text {
+    margin-bottom: 4.1rem;
+}
+
+.hobbies-left-side .text:last-child, .hobbies-right-side .text:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 1700px) {
+    .name {
+        font-size: 7rem;
+        line-height: 8.1rem;
+    }
+
+    .sub-text {
+        font-size: 2rem;
+        line-height: 2.3rem;
+    }
+
+    .header {
+        font-size: 5rem;
+        line-height: 5.8rem;
+    }   
+}
+
+@media (max-width: 1300px) {
+    .name {
+        font-size: 5.5rem;
+        line-height: 6.4rem;
+    }
+
+    .sub-text {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+
+    .header {
+        font-size: 4rem;
+        line-height: 4.6rem;
+    }
+    
+    .left-side .sub-text:nth-child(2) {
+        width: 50vw;
+    }
+}
+
+@media (min-width: 1023px) and (min-height: 1365px) {
+    .main-wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .hobbies-container {
+        width: 35vw;
+    }
+}
+
+@media (max-width: 1050px) {
+    .main-wrapper {
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .hobbies-container {
+        width: 35vw;
+    }
+
+    .left-side .sub-text:nth-child(2) {
+        width: 70vw;
+    }
+}
+
+@media (max-width: 576px) {
+    .name {
+        font-size: 3rem;
+        line-height: 3.4rem;
+    }
+
+    .sub-text {
+        font-size: 1.2rem;
+        line-height: 1.3rem;
+    }
+
+    .header {
+        font-size: 2.5rem;
+        line-height: 2.8rem;
+    }
+    
+    .hobbies-container {
+        width: 70vw;
+    }
+}
