@@ -1,6 +1,6 @@
 # Sketch
 
-## İndex
+## Index
 ![index](https://user-images.githubusercontent.com/53499802/99200811-9c9e0700-27b8-11eb-9c9a-47b5876cbfac.png)
 
 ## Hakkımda
