@@ -217,7 +217,7 @@ a {
     }
 }
 
-@media (min-width: 1023px) and (min-height: 1365px) {
+@media (width: 1024px) and (height: 1366px) {
     .nav-container {
         justify-content: center;
     }
