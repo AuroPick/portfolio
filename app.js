@@ -3,6 +3,8 @@ const expressLayouts = require("express-ejs-layouts");
 const path = require("path");
 const nodeMailer = require("nodemailer");
 const bodyParser = require("body-parser");
+const expressSitemapXml = require("express-sitemap-xml");
+const robots = require("express-robots-txt");
 
 const app = express();
 const port = process.env.PORT || 5000;
@@ -13,6 +15,11 @@ app.use(bodyParser.urlencoded({
     extended: false
 }))
 app.use(bodyParser.json());
+app.use(expressSitemapXml(() => {
+    return ["/", "hakkimda", "/yetenekler", "/projeler", "/iletisim"]},"https://aykut-portfolio.herokuapp.com"
+  )
+);
+app.use(robots({ Sitemap: "https://aykut-portfolio.herokuapp.com/sitemap.xml" }));
 
 app.set("layout", "./layouts/default-layout");
 app.set("view engine", "ejs");
