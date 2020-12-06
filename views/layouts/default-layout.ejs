@@ -1,69 +1,138 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="google-site-verification" content="SplCGYK6KW5a8VbPqkoWWmZ6Hh1u42Tvp0jLoW-0Pqg" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="google-site-verification"
+      content="SplCGYK6KW5a8VbPqkoWWmZ6Hh1u42Tvp0jLoW-0Pqg"
+    />
     <title><%- title%></title>
-    <link rel="shortcut icon" href="static/img/portfolio.png" type="image/x-icon">
-    <link rel="stylesheet" href="/static/css/default-layout-style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <%- style %>
-    <%- styles %>
-</head>
+    <link
+      rel="shortcut icon"
+      href="static/img/portfolio.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/static/css/default-layout-style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <%- style %> <%- styles %>
+  </head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script
+    async
+    src="https://www.googletagmanager.com/gtag/js?id=G-ECBV3PRN6Y"
+  ></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag("js", new Date());
 
-<body>
+    gtag("config", "G-ECBV3PRN6Y");
+  </script>
+  <body>
     <main class="main">
-        <section class="nav-container">
-            <div class="nav-wrapper">
-                <nav class="nav">
-                    <img class="nav-icon" src="static/svg/bars-solid.svg" alt="hamburger">
-                    <ul class="nav-list">
-                        <li class="nav-list-item"><a class="nav-link" href="/">Ana Sayfa</a></li>
-                        <li class="nav-list-item"><a class="nav-link" href="/hakkimda">Hakkımda</a></li>
-                        <li class="nav-list-item"><a class="nav-link" href="/yetenekler">Yetenekler</a></li>
-                        <li class="nav-list-item"><a class="nav-link" href="/projeler">Projeler</a></li>
-                        <li class="nav-list-item"><a class="nav-link" href="/iletisim">İletişim</a></li>
-                    </ul>
-                </nav>
-            </div>
-        </section>
-        <%- body %>
-        <section class="footer-container">
-            <div class="footer-wrapper">
-                <footer class="footer">
-                    <a class="footer-link" href="https://www.facebook.com/Zaalow/" target="_blank">
-                        <img class="footer-svg" src="/static/svg/facebook.svg" alt="facebook">
-                    </a>
-                    <a class="footer-link" href="https://twitter.com/AuroPick" target="_blank">
-                        <img class="footer-svg" src="/static/svg/twitter.svg" alt="twitter">
-                    </a>
-                    <a class="footer-link" href="https://github.com/AuroPick" target="_blank">
-                        <img class="footer-svg" src="/static/svg/github.svg" alt="github">
-                    </a>
-                    <a class="footer-link" href="https://www.linkedin.com/in/aykut-saki/" target="_blank">
-                        <img class="footer-svg" src="/static/svg/linkedin.svg" alt="linkedin">
-                    </a>
-                </footer>
-            </div>
-        </section>
+      <section class="nav-container">
+        <div class="nav-wrapper">
+          <nav class="nav">
+            <img
+              class="nav-icon"
+              src="static/svg/bars-solid.svg"
+              alt="hamburger"
+            />
+            <ul class="nav-list">
+              <li class="nav-list-item">
+                <a class="nav-link" href="/">Ana Sayfa</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="/hakkimda">Hakkımda</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="/yetenekler">Yetenekler</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="/projeler">Projeler</a>
+              </li>
+              <li class="nav-list-item">
+                <a class="nav-link" href="/iletisim">İletişim</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </section>
+      <%- body %>
+      <section class="footer-container">
+        <div class="footer-wrapper">
+          <footer class="footer">
+            <a
+              class="footer-link"
+              href="https://www.facebook.com/Zaalow/"
+              target="_blank"
+            >
+              <img
+                class="footer-svg"
+                src="/static/svg/facebook.svg"
+                alt="facebook"
+              />
+            </a>
+            <a
+              class="footer-link"
+              href="https://twitter.com/AuroPick"
+              target="_blank"
+            >
+              <img
+                class="footer-svg"
+                src="/static/svg/twitter.svg"
+                alt="twitter"
+              />
+            </a>
+            <a
+              class="footer-link"
+              href="https://github.com/AuroPick"
+              target="_blank"
+            >
+              <img
+                class="footer-svg"
+                src="/static/svg/github.svg"
+                alt="github"
+              />
+            </a>
+            <a
+              class="footer-link"
+              href="https://www.linkedin.com/in/aykut-saki/"
+              target="_blank"
+            >
+              <img
+                class="footer-svg"
+                src="/static/svg/linkedin.svg"
+                alt="linkedin"
+              />
+            </a>
+          </footer>
+        </div>
+      </section>
     </main>
-    <div id="particles-js">
-    </div>
+    <div id="particles-js"></div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/particles.js/2.0.0/particles.min.js"></script>
     <script>
-        particlesJS.load('particles-js', '/static/particlesjs-config.json', (err) => {
-            if (err) {
-                console.log(err);
-            } else {
-                console.log("particle.js yüklendi.");
-            }
-        });
+      particlesJS.load(
+        "particles-js",
+        "/static/particlesjs-config.json",
+        (err) => {
+          if (err) {
+            console.log(err);
+          } else {
+            console.log("particle.js yüklendi.");
+          }
+        }
+      );
     </script>
     <script src="static/js/navbar-toggle-script.js"></script>
     <%- script %>
-</body>
-
+  </body>
 </html>
