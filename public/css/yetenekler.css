@@ -4,6 +4,16 @@
     }
 }
 
+@keyframes rotateOnLoad {
+    50% {
+        transform: rotateY(-180deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }   
+}
+
 .main-wrapper {
     justify-content: space-around;
     align-items: initial;
@@ -120,6 +130,10 @@
     position: relative;
     transition: transform 0.6s;
     transform-style: preserve-3d;
+    animation: rotateOnLoad 2000ms ease 1000ms;
+    -webkit-animation: rotateOnLoad 2000ms ease 1000ms;
+    -o-animation: rotateOnLoad 2000ms ease 1000ms;
+    -moz-animation: rotateOnLoad 2000ms ease 1000ms;
 }
 
 .skills-text {
